@@ -1,4 +1,4 @@
-import { Container, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import { Container, SimpleGrid, Text, VStack, useColorModeValue } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useArtworkGallery } from "../store/artwork";
@@ -6,6 +6,11 @@ import ArtworkCard from "../components/ArtworkCard";
 
 const HomePage = () => {
 	const { fetchArtworks, artworks } = useArtworkGallery();
+
+	const textGradient = useColorModeValue(
+		"linear(to-r, pink.400, purple.500)", 
+		"linear(to-r, rgb(197, 161, 68), rgb(153, 108, 44))" 
+	);
 
 	useEffect(() => {
 		fetchArtworks();
@@ -18,7 +23,7 @@ const HomePage = () => {
 				<Text
 					fontSize={"30"}
 					fontWeight={"bold"}
-					bgGradient={"linear(to-r, pink.400, purple.500)"}
+					bgGradient={textGradient}
 					bgClip={"text"}
 					textAlign={"center"}
 				>
