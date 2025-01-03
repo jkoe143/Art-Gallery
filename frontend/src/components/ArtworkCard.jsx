@@ -188,3 +188,4 @@ const ArtworkCard = ({ artwork }) => {
 };
 
 export default ArtworkCard;
+
