@@ -22,7 +22,7 @@ import {
 	useToast,
 	VStack,
 } from "@chakra-ui/react";
-import { useArtworkGallery } from "../gallery/artwork";
+import { useArtworkGallery } from "../store/artwork";
 import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 

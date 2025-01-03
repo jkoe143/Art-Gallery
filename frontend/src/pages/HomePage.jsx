@@ -1,7 +1,7 @@
 import { Container, SimpleGrid, Text, VStack, useColorModeValue } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useArtworkGallery } from "../gallery/artwork";
+import { useArtworkGallery } from "../store/artwork";
 import ArtworkCard from "../components/ArtworkCard";
 
 const HomePage = () => {
