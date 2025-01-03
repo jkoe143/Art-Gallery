@@ -1,6 +1,6 @@
 import { Box, Button, Container, Heading, Input, useColorModeValue, useToast, VStack } from "@chakra-ui/react";
 import { useState } from "react";
-import { useArtworkGallery } from "../store/artwork";
+import { useArtworkGallery } from "../gallery/artwork";
 
 
 const CreatePage = () => {
