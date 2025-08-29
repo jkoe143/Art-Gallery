@@ -22,6 +22,3 @@ npm run build
 ```shell
 npm run start
 ```
-
-### Deployed Website
-https://art-gallery-vypn.onrender.com/
